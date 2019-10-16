@@ -1,0 +1,10 @@
+*.log
+*.mod
+*.o
+*.qdstrm
+*.swp
+*.qdrep
+*log.txt
+derived_types/typetest
+fortran_acc_async/asynctest
+fortran_classes/classtest
