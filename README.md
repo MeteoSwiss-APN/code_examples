@@ -1,0 +1,2 @@
+# How to contribute
+When working with technology that is itself going through a lot of development, like OpenACC with PGI, it is sometimes useful to write a minimal example of a feature that is used in big codes like COSMO or ICON. These minimal examples serve as an excellent tool to learn working with these technologies or play around with features to explore the technology itself. If you have such minimal examples, please share them with your current and future collaborators in this repository!
