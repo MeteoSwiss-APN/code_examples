@@ -1,0 +1,13 @@
+#! /bin/ksh
+#=============================================================================
+
+#SBATCH --constraint=gpu
+#SBATCH --account=d56
+#SBATCH --partition=debug
+
+module load daint-gpu 
+module load cudatoolkit/11.0.2_3.38-8.1__g5b73779
+module load nvidia-nsight-systems/2021.1.1.66-6c5c5cb
+
+
+nsys profile -f true -t openacc -o /scratch/snx3000/vcherkas/testcode/profile_testrun srun --account d56 --partition debug -C gpu -n1 a.out 10000000
