@@ -3,7 +3,7 @@
 This example was created to test whether you can pass a paramater to a function, for example the index of a loop, and use this within async, ie async(i), to enable concurrent streams to run some indepenedent code blocks. The run script also runs run the nsys profiler, which you can then open with nsight systems. THen you can see that the different async streams are used to run the code almost in parallel (with delay from sequential cuda api calls). 
 
 
-## Prepare environment:
+## Prepare environment (daint):
 ```
 module load daint-gpu
 module switch PrgEnv-cray/6.0.9 PrgEnv-pgi
